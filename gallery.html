@@ -1,56 +1,170 @@
-<html>
-<head>
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-    <!-- Additional CSS must be placed after Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Northwest Guppies</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <!-- Additional CSS must be placed after Bootstrap CSS -->
+  <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+  <link rel="stylesheet" href="css/gala.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Northwest Guppies</title>
 </head>
 <body>
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-light">
-            <a class="navbar-brand" href="#"><h3>Northwest</h3>
-            <h3><strong>Guppies</strong></h3>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="member.html">Membership</a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Gallery</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Shop</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
-                  </li>
-                  <div class="animation home-start"></div>
-              </ul>
-              <img src="img/cart2.png" width=28px>
-             
-            </div>
-          </nav>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <img src="img/logo3.jpg" width="65px" height="65px">
+    <a class="navbar-brand" href="index.html"><h3>Northwest Guppies</h3></a>
+  
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+        <li class="nav-item ">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="member.html">Enroll</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="shop.html">Shop</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+      </ul>
     </div>
-     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
-     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <span class="navbar-text">
+      <a role="button" data-toggle="modal" data-target="#loginModal">
+          <i class="fa fa-sign-in"></i> Login
+      </a>
+  </span>
+      <img src="img/cart2.png" width="35px" height="35px">
+  </nav>
+  <div class="modal fade" id="loginModal" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Login</h3>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-12">
+                                <label class="sr-only" for="loginUser">Email address</label>
+                                <input type="input" class="form-control form-control-sm" id="loginUser" placeholder="Enter username">
+                            </div>
+                            <div class="form-group col-12">
+                                <label class="sr-only" for = "loginPassword">Password</label>
+                                <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                            </div>
+                            <div class="col">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label">Remember me</label>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="form-row">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+    <section class="gallery min-vh-100">
+      <div class="container-lg">
+        <div class="row">
+          <div class="col">
+            <h2>Gallery image</h2>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+          <div class="col">
+            <img src="img/blue_topaz.jpg"  width="400px" height="300px" >
+          </div>
+          <div class="col">
+            <img src="img/hb_white.jpg" width="400px" height="300px">
+          </div>
+          <div class="col">
+            <img src="img/hb_yellow.jpg" width="400px" height="300px">
+          </div>
+          <div class="col">
+            <img src="img/fullgold.jpg" width="400px" height="300px">
+          </div>
+          <div class="col">
+            <img src="img/snow_white.jpg" width="400px" height="300px">
+          </div>
+          <div class="col">
+            <img src="img/red_dumbo_ear.jpg" width="400px" height="300px">
+          </div>
+          <div class="col">
+            <img src="img/red_abino.jpg" width="400px" height="300px">
+          </div>
+          <div class="col">
+            <img src="img/purple_mosaic.png" width="400px" height="300px">
+          </div>
+          <div class="col">
+            <img src="img/green_dragon.jpg" width="400px" height="300px">
+          </div>
+          <div class="col">
+            <img src="img/koi-red-gen-ear-rb.jpg" width="400px" height="300px">
+          </div>
+          <div class="col">
+            <img src="img/yellow_cobra.jpg" width="400px" height="300px">
+          </div>
+          <div class="col">
+            <img src="img/red-big-ear.jpg" width="400px" height="300px">
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+  </div>
+  <footer>
+    <div class="row">
+      <div class="col-3 col-sm-2 text-center">
+        <h5>Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="member.html">Enroll</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contactus.html">Contact</a></li>
+        </ul>
+        </div>
+        <div class="col-6 col-sm-6 text-center">
+          <h5>Social</h5>
+      <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+      <a class="btn btn-social-icon btn-twitter"href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+      <a class="btn btn-social-icon btn-google"href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+      </div>
+      <div class="col-3 col-sm-4 text-center">
+        <a role="button" class="btn btn-link text-white" href="tel:+12065551234"><i class="fa fa-phone fa-lg text-primary"></i>*-***-***-***</a><br/>
+        <a role= "button" class = "btn btn-link text-white" href="mailto:campsites@nucamp.co" class="fa fa-envelope fa-lg text-primary"></i>Email: lamtruong261091@gmail.com</a>
+    </div>
+    </div>
+  </footer>
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
+
+    
+  
+
+     

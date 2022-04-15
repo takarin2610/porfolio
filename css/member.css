@@ -1,0 +1,32 @@
+#enroll{
+    background: url(../img/bg2.jpg);
+    display: table;
+    height: 90%;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    background-position: right;
+}
+.card-deck{
+    margin: 7px 10px;
+}
+.card-img-top{
+    height: 70%;
+    border: 2px solid rgb(5, 183, 253);
+}
+.card-body{
+    border: 2px solid rgb(5, 183, 253);
+}
+.container{
+    position: relative;
+    top: 45%;
+    padding-top: 30px;
+    border: 3px solid rgb(11, 31, 37);
+    box-sizing: border-box;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    background-color: skyblue;
+    opacity: 0.8;
+}
+
