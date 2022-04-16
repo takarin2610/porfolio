@@ -1,6 +1,6 @@
 
 #shop{
-    background-color: rgb(13, 222, 230);
+    background-image: linear-gradient(-45deg, rgb(48, 48, 214), skyblue, aqua, skyblue, rgb(48, 48, 214));
     padding-bottom: 50px;
 }
 .cart .table{
@@ -97,4 +97,12 @@
 }
 .tbody{
     background-color: #ebebeb;
+}
+.des{
+    font-style: italic;
+    font-weight: bold;
+}
+.hero-logo{
+    text-align: center;
+    padding-top: 15px;
 }
